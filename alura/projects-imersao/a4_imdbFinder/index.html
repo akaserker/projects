@@ -1,0 +1,38 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3572/3572000.png" />
+  <title>IMBd - Internet Movie Database</title>
+</head>
+
+<body>
+  <header>
+    <img class="alura-logo" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg"
+      alt="">
+  </header>
+
+  <div class="container">
+    <div class="text"><label>Informe um filme/ diretor/ ator: </div><input type="text" id="autoComplete" placeholder="">
+    <button type="submit" id="btn" onclick="findIt()">Buscar</button></label>
+
+    <div class="search-container"></div>
+  </div>
+
+  <div class="movies"></div>
+
+  <footer>
+    <div class="copy">Adaptado com carinho por <a href="https://github.com/akaserker" target="_blank">Francine Rosa
+        ♥</a>
+    </div>
+    <a href="https://alura.com.br/" target="_blank"><img class="footer-logo"
+        src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="footer" />
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Press+Start+2P&display=swap');
+
+* {
+  /* reset geral para conseguir atingir um grau de igualdade */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* normalmente ativa em todos sites */
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px;
+}
+
+.bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  background: url(./img.png) no-repeat;
+  background-size: cover;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100vh;
+  height: 25vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border: #54b3d6 solid 3px;
+  border-top: solid 50px #faaaff;
+  position: relative;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px #54b3d6;
+  text-decoration-style: dashed;
+  color: #faaaff;
+  padding: 50px 20px 50px 20px;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+h2 {
+  font-size: 20px;
+  color: #54b3d6;
+  text-shadow: 2px 2px #faaaff;
+  text-decoration-style: dashed;
+  padding-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  color: #54b3d6;
+}
+
+.alura-logo {
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.tb-items {
+  width: auto;
+  height: auto;
+  margin: auto;
+  /* border: #54b3d6 solid 3px; */
+  /* border-collapse: collapse; */
+}
+
+input {
+  background: #fddaff;
+  color: #218ab1;
+  width: 250px;
+  height: 100px;
+  margin: auto;
+  padding: auto;
+  border: solid 2px #54b3d6;
+  border-radius: 10px 0px 0 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+input::placeholder {
+  text-align: center;
+  font-style: oblique;
+  color: #54b3d6;
+}
+
+input:hover {
+  border: solid 2px #54b3d6;
+}
+
+button {
+  background: #a1eaff;
+  color: #faaaff;
+  text-shadow: 2px 1px #54b3d6;
+  width: 100px;
+  height: 100px;
+  border: solid 2px #faaaff;
+  border-radius: 0 10px 10px 0;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Segoe Script', 'Comic Sans MS', monospace;
+}
+
+button:hover {
+  cursor: url("https://img.icons8.com/nolan/32/hand-cursor.png"), auto;
+  box-shadow: inset 100px 0 0 0 #faaaff;
+  color: white;
+}
+
+h3 {
+  padding-top: 20px;
+  color: #faaaff;
+  text-shadow: 2px 1px #54b3d6;
+  font-size: 30px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+  text-align: right;
+  padding: 1rem;
+}
+
+.copy {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  color: #faaaff;
+  text-shadow: 2px 1px #54b3d6;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+  text-align: left;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.copy a {
+  text-decoration: none;
+  color: #faaaff;
+}
+
+.copy a:hover {
+  text-decoration: underline;
+  color: #218ab1;
+}

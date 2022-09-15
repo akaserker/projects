@@ -1,0 +1,59 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/184/184697.png" />
+  <title>Calculadora de médias escolares</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="content">
+
+        <header>
+        <div class="logo"> 
+          <div class="logo-img">
+          <img id="logo_id" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg">
+          </div>
+          <p> Selecione a opção abaixo para realizar o cálculo referente à média das notas ou presenças.</p>
+        </div>
+
+        <div class="content--btn">
+          <input id="btn" type="button" value="Média das notas" onclick="mediaNota()" /><!-- --><input id="btn"
+            type="button" value="Média das faltas" onclick="mediaFaltas()" />
+        </div>
+        </header>
+
+        <div class="content--obs">
+          <p><span>Atenção!</span> Critérios para se observar: </p>
+          <ol>
+            <li>A média para aprovação é de: 7.0;</li>
+            <li>Além disto o aluno com mais de 7 faltas por mês (em média) será <span>reprovado</span>.</li>
+          </ol>
+        </div>
+
+        <div id="teste" class="teste"> Conheça mais sobre meus projetos. </div>
+
+        <!-- <div class="line">
+          (Infelizmente não consegui ajeitar esta parte ainda por conta do content 40vw)
+        </div> -->
+
+
+
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Adaptado com carinho por <a href="https://github.com/akaserker" target="_blank">Francine Rosa ♥</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

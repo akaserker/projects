@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/pokemon-pokeball/pokemon-pokeball-pointer-32x32.png), pointer !important;
+}
+
+body {
+  text-align: center;
+  min-height: 100vh;
+  background-image: url("https://wallpapercave.com/uwp/uwp2017268.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  /* display: inline-block;
+  margin-top: 5%;
+  position: relative; */
+  width: 100%;
+  height: 97%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.alura-logo {
+  width: 10%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #ed41ad;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.content {
+  width: 100vh;
+  height: 80vh;
+  /* background: rgba(510, 590, 509, 0.8);
+  border-radius: 20px;
+  border-bottom: solid 20px #d12d2e; */
+  position: relative;
+}
+
+.pokedex {
+  width: 100%;
+  padding: 0;
+  max-width: 700px;
+}
+
+.pokemon_image {
+  position: absolute;
+  top: 52%;
+  bottom: 0;
+  left: 45%;
+  right: 0;
+  height: 15%;
+  padding-bottom: 20px;
+  /* transform: translate(3%, 1%); */
+}
+
+.pokemon_data {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2rem;
+  position: absolute;
+  text-decoration: underline;
+  color: rgba(35, 37, 36, 0.856);
+  top: 68%;
+  right: 0;
+  left: 0;
+
+}
+
+.pokemon_name {
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+  text-transform: capitalize;
+}
+
+.form {
+  position: absolute;
+  color: black;
+  width: 20%;
+  top: 77%;
+  bottom: 0;
+  left: 40%;
+  right: 0;
+}
+
+.input_search {
+  margin: 0;
+  padding: 4%;
+  width: 90%;
+  text-align: center;
+
+  /* outline: none; */
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: 6px;
+  box-shadow: -2px 2px 0 rgb(122, 120, 120);
+  background-color: rgb(168, 167, 167);
+}
+
+.buttons {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  left: 172%;
+  right: 0;
+  bottom: 106%;
+  display: flex;
+  /* gap: 10px; */
+}
+
+.btn {
+  cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/pokemon-pokeball/pokemon-pokeball-pointer-32x32.png), pointer !important;
+  width: 30%;
+  padding: 0.9%;
+  outline: none;
+  /*
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: 6px;
+  color: rgb(219, 210, 210);
+  background-color: rgb(15, 14, 14);
+  box-shadow: -2px 2px 0 rgb(122, 120, 120); */
+}
+
+.btn:active {
+  cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/pokemon-pokeball/pokemon-pokeball-cursor-32x32.png), default !important;
+  background-color: red;
+  box-shadow: inset -2px 2px 0 rgb(122, 120, 120);
+  font-size: 0.8rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+  text-align: left;
+  padding: 1rem;
+}
+
+.copy {
+  font-family: 'Segoe Script', 'Comic Sans MS', monospace;
+  font-size: 10px;
+  text-shadow: 2px 1px #ed41ad;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #0cd5f1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+  text-align: right;
+  padding: 1rem;
+  padding-right: 15px;
+}
+
+.copy a {
+  font-family: 'Segoe Script', 'Comic Sans MS', monospace;
+  text-decoration: none;
+  color: #fff;
+}
+
+.copy a:hover {
+  text-decoration: underline;
+  color: #ed41ad;
+}
+
+.logo--footer {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+  text-align: left;
+  padding-left: 15px;
+}

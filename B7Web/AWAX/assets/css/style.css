@@ -1,0 +1,533 @@
+* {
+  /* reset geral para conseguir atingir um grau de igualdade */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* normalmente ativa em todos sites */
+}
+
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  overflow-x: hidden;
+}
+
+header {
+  height: 100px;
+  background-color: black;
+  /*color: white;*/
+}
+
+.header {
+  max-width: 1140px;
+  /* se monitor passar, ele vai diminuir */
+  height: 100px;
+  margin: auto;
+  /* centraliza */
+  display: flex;
+  /* conteúdo já usando FLEX, temos 2 conteúdos desktop e mobile */
+  align-items: center;
+  /* alinhar tudo no meio */
+}
+
+.logo {
+  width: 100px;
+}
+
+.logoimg {
+  width: 80px;
+  height: 80px;
+  background-color: #B28756;
+  border-radius: 40px;
+}
+
+.menu {
+  flex: 1;
+  /* Pega todo restante do espaço */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu ul,
+.menu li {
+  list-style: none;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid black;
+}
+
+.menu li a:hover,
+.menu .active a {
+  border-bottom: 5px solid #B28756;
+  color: antiquewhite;
+}
+
+
+.banner {
+  height: calc(100vh - 100px);
+  /* tamanho total do monitor, descontar o header */
+  background-color: #333;
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  /* ajusta e preenche todo o espaço */
+  background-position: bottom;
+  overflow: hidden;
+  /* tudo o que passa dentro do banner ele vai ignorar */
+}
+
+.banner .sliders {
+  width: 1000vh;
+  /* tamanho de 10 telas */
+  height: 100%;
+}
+
+.banner .slide {
+  width: 100vw;
+  height: 100%;
+  display: inline-block;
+  /* um ao lado do outro */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .slidearea {
+  display: flex;
+  flex-direction: column;
+  /* aqui deixa um abaixo do outro o texto */
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.banner h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.banner h1 span {
+  color: #B28756;
+}
+
+.banner h2 {
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+/* .banner a {
+  display: inline-block;
+  background-color: #B28756;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+}  */
+
+.button {
+  display: inline-block;
+  background-color: #B28756;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+.banner .sliders-pointers {
+  width: 100vw;
+  height: 20px;
+  position: absolute;
+  /* força ele a aparecer e fica independente da área */
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #B28756;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.banner .pointer.active {
+  background-color: #B28756;
+}
+
+
+.default {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.default .section-title,
+.default .section-desc {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.default .section-title {
+  font-size: 20px;
+}
+
+.default .section-desc {
+  font-size: 12px;
+  color: #CCC;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.default .section-body {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.default.light {
+  background-color: #F7F7F7;
+}
+
+.default.light .section-title,
+.default.light .section-body {
+  color: #000;
+}
+
+.default.dark {
+  background-color: black;
+}
+
+.default.dark .section-title,
+.default.dark .section-body {
+  color: white;
+}
+
+/* ACIMA É ÁREA DE INTERFACE / ABAIXO AREA ESPECIFICA */
+
+.section-aboutus {
+  display: flex;
+}
+
+.section-aboutus--left {
+  flex: 1;
+}
+
+.section-aboutus--left p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.section-aboutus--right {
+  width: 500px;
+  text-align: center;
+}
+
+.section-aboutus--right img {
+  width: 480px;
+  box-shadow: 0px 5px 10px #333;
+}
+
+.section-services {
+  display: flex;
+}
+
+.section-service {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #333;
+  padding: 15px;
+}
+
+.section-service:first-child {
+  border-left: 1px solid #333;
+}
+
+.section-service h4 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.section-service p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #999;
+}
+
+
+
+
+.section-projects {
+  display: flex;
+  flex-direction: column;
+  /* para que cada um item abaixo do outro */
+  align-items: center;
+}
+
+.section-projects--filters {
+  border: 1px solid #CCC;
+  background-color: #EEE;
+  border-radius: 30px;
+  display: inline-block;
+  /* Pega a área específica dele mesmo não deixando em toda página */
+  padding: 0px 20px;
+}
+
+.section-projects--filters ul,
+.section-projects--filters li {
+  list-style: none;
+}
+
+.section-projects--filters li {
+  display: inline-block;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-left: 1px solid #CCC;
+  color: #555;
+  border-bottom: 3px solid #EEE;
+  cursor: pointer;
+}
+
+.section-projects--filters li:hover,
+.section-projects--filters li.active {
+  border-bottom: 3px solid #B28756;
+}
+
+.section-projects--filters li:first-child {
+  border-left: 0;
+}
+
+.section-projects--photos {
+  width: 100vw;
+  /* caso seja menor ele vai assumir isso */
+  max-width: 1140px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* caso não couber pode ir para baixo */
+  justify-content: center;
+}
+
+.section-projects--photo {
+  width: 280px;
+}
+
+.section-projects--photoarea {
+  margin: 10px;
+  width: 260px;
+  height: 160px;
+}
+
+.section-projects--photoarea img {
+  width: inherit;
+  /* vai herdar item anterior */
+  height: inherit;
+}
+
+.section-projects--photoinfo {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: inherit;
+  height: inherit;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.section-projects--photoinfo h5 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-projects--photoarea:hover .section-projects--photoinfo {
+  display: flex;
+}
+
+.bg-team {
+  background-image: url(/AWAX/assets/images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+.section-team-area{
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-team{
+  overflow: hidden; /* remove área desperdiçada */
+  max-width: 880px;
+  margin: auto; /* centraliza */
+}
+
+.section-team .sliders {
+  width: 1000vh;
+  /* tamanho de 10 telas */
+  height: 100%;
+}
+
+.section-team .slide {
+  width: 280px;
+  height: 100%;
+  min-height: 300px;
+  display: inline-block;
+  /* um ao lado do outro */
+  background-color: white;
+  margin-right: 20px;
+}
+
+.section-team .slidearea {
+  display: flex;
+  flex-direction: column;
+  /* aqui deixa um abaixo do outro o texto */
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 30px;
+}
+
+.section-team-area .sliders-pointers {
+  margin-top: 30px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-team-area .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #B28756;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.section-team-area .pointer.active {
+  background-color: #B28756;
+}
+
+.section-team--avatar{
+  width: 150px;
+  height: auto;
+
+}
+.section-team--name{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+.section-team--role {
+  font-size: 14px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.section-team--social {
+  display: flex;
+  margin-top: 20px;
+}
+
+.section-team--social a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #CCC;
+  border-radius: 13px;
+  margin-right: 10px;
+}
+
+.section-team--social a:hover {
+  background-color: #B28756;
+}
+
+.section-review-customer--name {
+    font-weight: 600;
+      font-size: 17px;
+margin-top: 30px;
+  font-size: 14px;
+  color: black;
+  margin-top: 5px;
+}
+
+.section-reviews .sliders-pointers {
+  margin-top: 30px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-reviews .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #B28756;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.section-reviews .pointer.active {
+  background-color: #B28756;
+}
+
+.section-reviews--avatar {
+  width: 150px;
+  height: auto;
+}
+
+.section-reviews {
+  display: flex;
+    flex-direction: column;
+    /* aqui deixa um abaixo do outro o texto */
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 30px;
+}
+
+.section-review-customer--name,
+.section-review-customer--role{
+    display: flex;
+        /* aqui deixa um abaixo do outro o texto */
+      height: 100%;
+      justify-content: center;
+}

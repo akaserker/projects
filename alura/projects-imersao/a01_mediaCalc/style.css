@@ -1,0 +1,151 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+}
+
+main {
+  background-color: #125;
+  background-image: url("https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202208/MIT-MathProblemSolver-01-press_0.jpg?itok=aLGeaOnY");
+  width: 100%;
+  height: 97%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.content {
+  width: 100vh;
+  height: 80vh;
+  background-color: #fff;
+  background: rgba(510, 590, 509, 0.8);
+  border-radius: 20px;
+  border-bottom: solid 20px #d12d2e;
+  position: relative;
+}
+
+.logo {
+  background-color: #125;
+  color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding-bottom: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.logo-img {
+  padding: 15px;
+  text-align: right;
+}
+
+#logo_id{
+  max-width: 12.5rem;
+  max-height: 9.375rem;
+}
+
+/* .content--btn {
+  text-align: center;
+} */
+
+#btn {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.875rem;
+  background-color: #125;
+  border: 1px solid #125;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  width: 50%;
+  height: 10vw;
+}
+
+#btn:hover {
+  background-color: #fff;
+  color: #125;
+  transition: 0.3s all ease;
+}
+
+.content--obs {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 15px;
+  line-height: 25px;
+  text-decoration: underline;
+  /*height: 45%;*/
+}
+
+.content--obs li {
+  text-align: left;
+  font-size: 1rem;
+}
+
+span{
+  color: #d12d2e;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.teste{
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  background-color: #d12d2e;
+  width: 100%;
+  padding: 15px 0 0 0;
+  font-size: 12px;
+}
+
+/* .line {
+  width: 100%;
+  background: #d12d2e;
+  border-radius: 0 0 15px 15px;
+  font-size: 10px;
+  text-align: right;
+  text-transform: uppercase;
+  padding: 10px 0 10px 0;
+} */
+
+footer {
+  background-color: #125;
+  color: #fff;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 10px;
+  height: 1.9%;
+  padding: 0.625rem 0.313rem 0 0.313rem;
+  margin: 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #099;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #799;
+}
+
+/* .line {
+  background-color: #125;
+  color: #fff;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  padding-bottom: 40px;
+  font-size: 10px;
+
+      position: absolute;
+    bottom: 0;
+} */

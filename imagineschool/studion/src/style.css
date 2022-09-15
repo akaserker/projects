@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 7.75rem; /* calcula valor para abaixo do navbar, ou seja empurra o conteúdo*/
+}
+
+:root{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  --color-primary: #ffc500;
+  --default-padding: 1rem;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar{
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 7.75rem;
+  padding: 0 1rem;
+  background-color: black;
+  color: white;
+  z-index: 1; /* deixa por cima dos elementos */
+}
+
+.navbar--navigation{
+  justify-self: end;
+}
+
+.navbar--navigation li{
+  font-size: .875rem;
+  margin-right: 3rem;
+  text-transform: uppercase;
+  /* 16px pegou o root da page */
+}
+
+.navbar--navigation a{
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar--navigation a:hover{
+  color: var(--color-primary);
+  /* background-color: antiquewhite;
+  padding-bottom:  100%; */
+}
+
+.logo__studion{
+  font-size: 2.375rem;
+  font-weight: 900;
+  line-height: 1ch; /* relativa ao tamanho da altura do glifo 0 da fonte */
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.logo--studion__subtitle{
+  font-size: .875rem;
+  font-weight: 300;
+  /*float: right;*/
+}
+
+.copy--primary{
+  color: var(--color-primary)
+}
+
+/*h6{
+  margin: 0; reduz espaçamento entre logo e slide
+}*/
+
+#slider{
+  /*padding: var(--default-padding);*/
+  background-color: #000;
+  color: #fff;
+  /*background-image: url('/studion/images/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; <- Forma antiga!*/
+}
+
+.slide{
+  position: relative; /* prende o filho dentro do pai */
+  height: calc(100vh - 7.75rem); /*calcula valor pagina e diminui a altura do logo */
+}
+
+.slide__background-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide__copy{
+  position: absolute;
+  top: 6.25rem;
+  left: 50vw;
+}
+
+.slide__copy h6{
+  font-size: .9375rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1875rem;
+}
+
+.slide__copy h2{
+  font-size: 6.25rem;
+  text-transform: uppercase;
+  line-height: 6.25rem;
+}
+
+.slide__copy h2 span{
+  display: block; /* quebra de linha para o CREATIVE MINDS */
+}
+
+/* FRAMEWORK DE BOTÃO */
+
+.btn{
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  border: 0.125rem solid #fff;
+  border-radius: 5rem;
+  color: var(--color-primary);
+  background: unset; /* reseta para valor neutro */
+  font-size: .9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s all ease; /* alterações/animações entre a troca de propriedades */
+}
+
+.btn:hover, .btn:active, .btn:focus{
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
